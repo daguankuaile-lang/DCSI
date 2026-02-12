@@ -273,11 +273,11 @@ if __name__ == '__main__':
     if True:
         if not os.path.exists(args.records_dir):
             os.makedirs(args.records_dir)
-    lr_list = [0.1]   #,0.5,0.1
-    alpha_list = [1.0] # set 1e-4 for all datasets  1e-4,1e-3,1e-2,1e-1,1
-    beta_list = [1e-4,1e-7]  # 1e-4 for others  1e-3 for mir    1e-10,1e-9,1e-8,1e-7,1e-6,1e-5,1e-4,1e-3
+    lr_list = [0.1]  
+    alpha_list = [1.0] 
+    beta_list = [1e-7]  # 1e-4 for others ; 1e-3 for mir ; 1e-7 for cl5k   
     sigma_list = [0.25]
-    seed_list = [1999]  #1999 for col5k/pascal/mirflickr  1,50,100,24,12,3,33,69,199,1999  199,40
+    seed_list = [1999]  #1999 for col5k/pascal/mirflickr  
     
     
     if args.lr >= 0.01:
